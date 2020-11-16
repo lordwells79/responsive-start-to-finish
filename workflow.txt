@@ -1,0 +1,4 @@
+github -> creato repository
+https://www.toptal.com/developers/gitignore
+https://desktop.github.com/
+https://prepros.io/
