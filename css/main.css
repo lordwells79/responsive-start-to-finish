@@ -498,16 +498,69 @@ template {
 }
 
 /* line 4, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
+body {
+	color: #048ca8;
+}
+
+/* line 7, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
 img {
 	width: 100%;
 	height: auto;
 }
 
-/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
+/* line 11, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
 .container {
-	width: 92%;
+	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+/* line 1, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0 0 .75em;
+}
+
+/* line 4, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+h1:last-child, h2:last-child, h3:last-child, h4:last-child,
+h5:last-child, h6:last-child, p:last-child {
+	margin: 0;
+}
+
+/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+h1 {
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 1.15;
+	text-transform: uppercase;
+}
+
+/* line 14, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+h2 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1;
+}
+
+/* line 20, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+.title-large {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+/* line 23, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+.title-large span {
+	font-weight: 300;
+}
+
+/* line 26, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
+.text-intro {
+	font-size: 1.2rem;
+}
+
+/* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_grid.sass */
+.grid {
+	display: flex;
 }
 
 /* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_header.sass */
@@ -544,7 +597,39 @@ img {
 	display: none;
 }
 
-/* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_grid.sass */
-.grid {
-	display: flex;
+/* line 1, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
+.btn {
+	display: inline-block;
+	padding: .75em 2.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
+.btn:not(:last-of-type) {
+	margin-bottom: .6em;
+}
+
+/* line 11, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
+.btn-primary {
+	background: #d31869;
+	color: white;
+	border: 2px solid #d31869;
+}
+
+/* line 16, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
+.btn-primary:hover, .btn-primary:focus {
+	background: #8e1047;
+}
+
+/* line 21, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
+.btn--secondary {
+	border: 2px solid white;
+	color: white;
+}
+
+/* line 25, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
+.btn--secondary:hover, .btn--secondary:focus {
+	background: white;
+	color: #048ca8;
 }
