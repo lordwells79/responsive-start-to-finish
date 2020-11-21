@@ -500,19 +500,27 @@ template {
 /* line 4, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
 body {
 	color: #048ca8;
+	text-align: center;
 }
 
-/* line 7, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
+/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
-/* line 11, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
+/* line 12, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
 .container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+/* line 17, ../../../../Desktop/responsive-start-to-finish/sass/base/_base.sass */
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 /* line 1, ../../../../Desktop/responsive-start-to-finish/sass/base/_typography.sass */
@@ -561,26 +569,33 @@ h2 {
 /* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_grid.sass */
 .grid {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+/* line 5, ../../../../Desktop/responsive-start-to-finish/sass/layout/_grid.sass */
+.col {
+	flex: 0 0 100%;
+}
+
+/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/layout/_grid.sass */
+.col--full {
+	flex: 0 0 100%;
 }
 
 /* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_header.sass */
 .main-header {
 	position: absolute;
-	top: 1em;
+	top: 0;
 	left: 0;
 	right: 0;
+	padding-top: 1em;
 }
 
-/* line 7, ../../../../Desktop/responsive-start-to-finish/sass/layout/_header.sass */
+/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/layout/_header.sass */
 .logo {
 	width: 25%;
 	max-width: 18rem;
 	min-width: 10rem;
-}
-
-/* line 12, ../../../../Desktop/responsive-start-to-finish/sass/layout/_header.sass */
-.main-nav {
-	display: none;
 }
 
 /* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_hero.sass */
@@ -595,6 +610,118 @@ h2 {
 /* line 8, ../../../../Desktop/responsive-start-to-finish/sass/layout/_hero.sass */
 .hero-img {
 	display: none;
+}
+
+/* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.main-nav {
+	background: #d31869;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 100%;
+	font-size: 1.2rem;
+	overflow: hidden;
+	transition: all ease-in-out 250ms;
+}
+
+/* line 12, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+/* line 18, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+li {
+	flex: 1 1 auto;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	display: flex;
+}
+
+/* line 25, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+a {
+	color: white;
+	text-decoration: none;
+	flex-basis: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* line 33, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+a:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 36, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.is-open {
+	left: 0;
+}
+
+/* line 42, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.nav-toggle {
+	display: block;
+	padding: 1em;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	cursor: pointer;
+}
+
+/* line 50, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.hamburger, .hamburger::before, .hamburger::after {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 3px;
+	background: white;
+	transition: all ease-in-out 250ms;
+}
+
+/* line 58, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.hamburger::before {
+	transform: translateY(-6px);
+}
+
+/* line 61, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.hamburger::after {
+	transform: translateY(3px);
+}
+
+/* line 64, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.hamburger.is-open {
+	transform: rotate(45deg);
+}
+
+/* line 67, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.hamburger.is-open::after {
+	transform: rotate(-90deg) translateX(3px);
+}
+
+/* line 70, ../../../../Desktop/responsive-start-to-finish/sass/layout/_nav.sass */
+.hamburger.is-open::before {
+	opacity: 0;
+}
+
+/* line 1, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-sales-point.sass */
+.sales-points {
+	padding: 10vh 0;
+}
+
+/* line 4, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-sales-point.sass */
+.sales-point {
+	margin-bottom: 2.5em;
+}
+
+/* line 7, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-sales-point.sass */
+.sales-point:first-of-type {
+	margin-top: 1.5em;
+}
+
+/* line 9, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-sales-point.sass */
+.sales-point:last-child {
+	margin-bottom: 0;
 }
 
 /* line 1, ../../../../Desktop/responsive-start-to-finish/sass/Components/_buttons.sass */
