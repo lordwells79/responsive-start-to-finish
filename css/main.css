@@ -899,13 +899,19 @@ h2 {
 
 /* line 2, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-promo.sass */
 .promo .bg-primary {
-	text-align: left;
 	padding-left: 7%;
 	padding-top: 7.5em;
 	padding-bottom: 7.5em;
 }
 
-/* line 8, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-promo.sass */
+@media (min-width: 725px) {
+	/* line 2, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-promo.sass */
+	.promo .bg-primary {
+		text-align: left;
+	}
+}
+
+/* line 10, ../../../../Desktop/responsive-start-to-finish/sass/layout/_home-promo.sass */
 .promo .img-box {
 	background: url(../img/phone-in-hand.jpg);
 	background-position: center;
@@ -1046,9 +1052,8 @@ footer a {
 		transform: skewX(60deg);
 		right: -100%;
 	}
-}
-
-/* line 36, ../../../../Desktop/responsive-start-to-finish/sass/Components/_cta.sass */
-.container--cta {
-	width: 50%;
+	/* line 36, ../../../../Desktop/responsive-start-to-finish/sass/Components/_cta.sass */
+	.cta .container--cta {
+		width: 50%;
+	}
 }
